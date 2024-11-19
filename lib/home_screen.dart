@@ -102,16 +102,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
 
                 }, child: Text('Social'))),
-        const SizedBox(
-          width: 250,
-          child: TextField(
-            obscureText: false,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: 'Password',
-            ),
-          ),
-        )
           ],
         ),
       ),
@@ -125,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.delete),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,// This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,// This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

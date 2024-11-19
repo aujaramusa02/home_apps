@@ -11,6 +11,7 @@ class LoginScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+
             Padding(padding: EdgeInsets.all(40)),
             const SizedBox(
               width: 250,
@@ -18,15 +19,14 @@ class LoginScreen extends StatelessWidget {
                 obscureText: false,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Email address',
+                  labelText: 'Email Address',
                 ),
               ),
             ),
-            Padding(padding: EdgeInsets.all(10)),
             const SizedBox(
               width: 250,
               child: TextField(
-                obscureText: false,
+                obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Password',
@@ -70,6 +70,7 @@ class LoginScreen extends StatelessWidget {
                       );
                     },
                     child: Text('Skip'))),
+
           ],
         ),
       ),

@@ -8,7 +8,21 @@ class UpdatedScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Updated Screen'),
       ),
-      body: Center(child: Text('Updated screen works'),),
-    );
+      body:ListView.builder (
+        itemCount: 10,
+        itemBuilder: (context, index){
+          return ListTile(
+            onTap: () {
+              print(index);
+            },
+            leading: CircleAvatar(
+              child: Text('A'),
+
+            ),
+            title: Text('List item'),
+            trailing: Checkbox(value: false, onChanged:(k){}),
+          );
+        }
+      )   );
   }
 }
